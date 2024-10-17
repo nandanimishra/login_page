@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novel</title>
+    <link rel="icon" href="https://www.foundingfuel.com/article/ff-life-a-beginners-guide-to-graphic-novels/">
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <center>
+   <div class="container"> 
+    <center>
+        <h2 class="title">Login </h2>
+        <form class="userdata">
+        <div class="icon">
+          <i class='bx bx-user'></i>
+            <input type="text" name="username" class="style" id="username" placeholder = "username" required>  
+             </div>
+            <div class="icon">
+         <i class='bx bx-lock'></i>
+            <input type="password" name="password" class="style" id="password" placeholder="password" required>
+             </div>
+        </form>
+        <button class="submit">submit</button>
+        <div class="toggleform">don't have an account yet?</div>
+    </center>
+</div>
+    </center> 
+    <script src="Index.js"> 
+
+        
+let toggle=document.getElementsByClassName("toggleform")[0];
+let title=document.getElementsByClassName("title")[0];
+
+
+toggle.addEventListener('click', function(){
+    if(title.innerText==="Login"){
+        toggle.innerText="Already have an account?";
+        title.innerText="Signup";
+       
+    } else {
+    toggle.innerText="don't have an account yet?";
+        title.innerText="Login";
+        
+    }
+})
+let names="abc"
+let password="123"
+
+let submit=document.getElementsByClassName("submit")[0];
+submit.addEventListener('click', function(){
+let username=document.getElementsById("username").value;
+let userpassword=document.getElementById("password").value;
+
+if(username===names && password===userpassword){
+    alert("valid");
+}else{
+    alert("Invalid");
+}
+
+});
+
+
+
+    </script>
+
+</body>
+</html>

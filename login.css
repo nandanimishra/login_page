@@ -1,0 +1,94 @@
+body{
+    margin:160px;
+    padding:0px;
+    font-family:0;
+    background-color:black;
+    color:black;
+    display:flex;
+    justify-content: center;
+    align-items:centre;
+    min-height:100vh;
+}
+  .container{
+    border:5px solid skyblue;
+    padding:7vh;
+    height:35vh;
+    width:20vw;
+    background-color:black;
+    border-radius:10px;
+    padding:20px;
+
+  }
+  .title {
+    color:#25cbe7;
+    font-size:36px;
+
+  }
+  form.userdata{
+    width:22vw;
+
+  }
+  #username{
+    width:18vw;
+    height:100%;
+    margin-bottom:20px;
+    background-color:transparent;
+    border:1px solid;
+    color:white;
+    outline:white;
+    border:none;
+    border-bottom:1px solid #25cbe7;
+       
+  }
+  .username::placeholder{
+    color:white;
+  }
+#password{
+    width:81%;
+    height:31px;
+    margin-bottom:5px;
+    background-color:transparent;
+    border:1px solid;
+    color:skyblue;
+    outline:none;
+    border:none;
+    border-bottom:1px solid #25cbe7;
+}
+.password::placeholder{
+    color:white;
+}
+.submit{
+    width:6vw;
+    height:4vh;
+    margin:0vh 0;
+    background-color:skyblue;
+    border:none;
+    color:black;
+    border-radius:10px;
+    margin-bottom: 2px;
+} 
+.toggleform{
+    font-size:15px;
+    color:white;
+}
+.user{
+    display:flex;
+    align-items:center;
+    margin:40px 0;
+}
+.userpassword{
+    display:flex;
+    align-items:center;
+}
+i.bx.bx-user{
+    color:skyblue;
+    font-size:20px;
+    margin-top:-12px;
+    
+}
+i.bx.bx-lock{
+  
+    color:skyblue;
+    font-size:20px;
+    margin-top:-12px;
+}
